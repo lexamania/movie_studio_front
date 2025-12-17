@@ -67,7 +67,7 @@ function Header() {
                   <li>
                     <a href={'/movies'}>Movies</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href={'/tv'}>TV Shows</a>
                   </li>
                   <li>
@@ -87,7 +87,7 @@ function Header() {
                   </li>
                   <li>
                     <a href={'/my_list'}>My List</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </li>
@@ -99,7 +99,7 @@ function Header() {
             <li className="header-list-item">
               <a href={'/movies'}>Movies</a>
             </li>
-            <li className="header-list-item">
+            {/* <li className="header-list-item">
               <a href={'/tv'}>TV Shows</a>
             </li>
             <li className="header-list-item">
@@ -119,7 +119,7 @@ function Header() {
             </li>
             <li className="header-list-item">
               <a href={'/my_list'}>My List</a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

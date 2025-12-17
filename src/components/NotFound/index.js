@@ -32,7 +32,7 @@ function NotFound() {
                   <span>Movies Home</span>
                 </button>
               </a>
-              <a className="play-link" href={'/tv'}>
+              {/* <a className="play-link" href={'/tv'}>
                 <button className="hasLabel">
                   <span className="play-icon">
                     <FontAwesomeIcon icon={faTv} />
@@ -47,7 +47,7 @@ function NotFound() {
                   </span>
                   <span>Music Home</span>
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

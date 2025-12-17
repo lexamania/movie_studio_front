@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { SWRConfig } from 'swr';
 
 import Admin from './Admin';
@@ -28,8 +28,9 @@ const App = () => {
       >
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
+            <Route path="/" element={<Navigate to="/movies" replace />} />
             <Route path="/movies" element={<Movies />} />
-            <Route path="/tv" element={<TVShows />} />
+            {/* <Route path="/tv" element={<TVShows />} />
             <Route path="music" element={<Music />}>
               <Route index element={<MusicHome />} />
               <Route path="search" element={<MusicSearch />} />
@@ -38,7 +39,7 @@ const App = () => {
               <Route path="album/:id" element={<AlbumDetail />} />
               <Route path="artists" element={<Artists />} />
               <Route path="songs" element={<Songs />} />
-            </Route>
+            </Route> */}
             <Route path="/admin" element={<Admin />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
